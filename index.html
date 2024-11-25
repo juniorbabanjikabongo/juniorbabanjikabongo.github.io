@@ -76,7 +76,7 @@
     <div class="brand">
       <img src="../assets/favicon.ico" alt="" width="30" height="30">
     </div>
-    <h3 class="ml-1">Gram</h3>
+    <h3 class="ml-1">JBK</h3>
     <button class="btn-fab toggle-menu mr-3"><span class="ti-menu"></span></button>
   </div>
   
@@ -191,7 +191,16 @@
                 <li class="fg-dark"><b>Adresse : </b>34730, Prades-le-lez, France</li>
                 <li class="fg-dark"><b>Age :</b> 19</li>
               </ul>
-              <button class="btn btn-theme btn-rounded"><a href="CV BABANJI-KABONGO.Junior.A.pdf" download="CV BABANJI-KABONGO.Junior.A.pdf">Télécharger mon CV</a></button> <button class="btn btn-theme btn-rounded"><a href="LM BABANJI-KABONGO.Junior.A.pdf" download="LM BABANJI-KABONGO.Junior.A.pdf">Télécharger ma Lettre de Motivation</a></button>
+               <button class="btn btn-theme btn-rounded">
+    <a href="../assets/documents/CV BABANJI-KABONGO.Junior.A.pdf" download="CV BABANJI-KABONGO.Junior.A.pdf">
+      Télécharger mon CV
+    </a>
+  </button>
+  <button class="btn btn-theme btn-rounded">
+    <a href="../assets/documents/LM BABANJI-KABONGO.Junior.A.pdf" download="LM BABANJI-KABONGO.Junior.A.pdf">
+      Télécharger ma Lettre de Motivation
+    </a>
+  </button>
             </div>
           </div>
         </div>
@@ -383,7 +392,7 @@ soutenir une cause humanitaire</li>
                 <span class="ti-announcement"></span>
               </div>
               <h4 class="fg-theme">Pilotage commercial d'une organisation</h4>
-              <p>Je développe des compétences en pilotage stratégique et en positionnement efficace pour diriger une organisation commerciale.</p>
+              <p>Je développe des compétences en stratégie et en positionnement pour diriger une organisation commerciale.</p>
         
             </div>
           </div>
@@ -458,7 +467,7 @@ soutenir une cause humanitaire</li>
           </div>
             </div>
           </div>
-          <div class="grid-item template wireframes wow zoomIn">
+          <div class="grid-item template wow zoomIn">
             <div class="img-place" data-src="../assets/img/image compétence excel.png" data-fancybox data-caption="<h5 class='fg-theme'>Excel</h5> <p>En tant qu'étudiant en deuxième année de Techniques de Commercialisation, je maîtrise les outils Excel pour analyser, structurer, et exploiter des données de manière efficace. Mes compétences incluent la gestion de tableaux de bord, le calcul de moyennes, l'application de formules conditionnelles, ainsi que l'analyse des tendances. Je sais également optimiser des fichiers logistiques pour faciliter la prise de décision et améliorer la visibilité des données stratégiques. </p>">
               <img src="../assets/img/excel.png" alt="">
               <div class="img-caption">
@@ -467,7 +476,7 @@ soutenir une cause humanitaire</li>
               </div>
             </div>
           </div>
-         <div class="grid-item apps ios wow zoomIn">
+         <div class="grid-item ios wow zoomIn">
   <div class="img-place">
     <a href="../assets/documents/rapport de stage.pdf" target="_blank" title="Voir mon rapport de stage">
       <img src="../assets/img/stage.png" alt="Rapport de stage">
@@ -478,7 +487,7 @@ soutenir une cause humanitaire</li>
     </div>
   </div>
 </div>
-          <div class="grid-item graphic ui-ux wow zoomIn">
+          <div class="grid-item ui-ux wow zoomIn">
             <div class="img-place" data-src="../assets/img/image_notepad.png" data-fancybox data-caption="<h5 class='fg-theme'>Mes compétences de codage HTML/CSS</h5> <p>Je maîtrise les bases du développement web en HTML et CSS, ce qui me permet de créer des structures claires et des designs modernes pour des sites web. Mes compétences incluent la création de mises en page adaptatives (responsive design), l’organisation efficace des contenus, et l’application de styles avancés pour améliorer l’expérience utilisateur. Je sais également intégrer des animations et rendre les pages plus interactives. En constante évolution, je travaille à perfectionner mes compétences pour réaliser des projets web de qualité professionnelle.</p>">
               <img src="../assets/img/html-css.png" alt="">
               <div class="img-caption">
@@ -487,7 +496,7 @@ soutenir une cause humanitaire</li>
               </div>
             </div>
           </div>
-    <div class="grid-item apps ios wow zoomIn">
+    <div class="grid-item graphic wow zoomIn">
     <div class="img-place">
         <!-- Image cliquable -->
         <a href="javascript:void(0);" onclick="togglePdfMenu()">
@@ -508,7 +517,7 @@ soutenir une cause humanitaire</li>
         </ul>
     </div>
 </div>
-<div class="grid-item graphic ui-ux wireframes wow zoomIn">
+<div class="grid-item wireframes wow zoomIn">
     <div class="img-place">
         <a href="../assets/documents/jbk beauty.pdf" target="_blank" title="Voir mes travaux personnels">
             <img src="../assets/img/perso.png" alt="Illustration de travaux personnels">
@@ -689,17 +698,43 @@ soutenir une cause humanitaire</li>
             <h3 class="fw-normal text-center">Abonnez-vous</h3>
           </div>
 		
-          <div class="col-lg-6">
-            <form class="mb-3">
-              <div class="input-group">
-                <input type="text" class="form-control" placeholder="Addresse E-mail">
-                <input type="submit" class="btn btn-theme no-shadow" value="Abonnez-vous">
-              </div>
-			    <div id="visit-counter" class="counter-container">
-    <p>Visites : <span id="count">0</span></p>
+          <<div class="col-lg-6">
+  <form class="mb-3">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Addresse E-mail">
+      <input type="submit" class="btn btn-theme no-shadow" value="Abonnez-vous">
+    </div>
+
+    <!-- Compteur de visites -->
+    <div id="visit-counter" class="counter-container">
+      <p>Visites : <span id="count">0</span></p>
+    </div>
+  </form>
 </div>
-            </form>
-          </div>
+
+<!-- Script pour gérer le compteur -->
+<script>
+  const counterNamespace = 'juniorbabanjikabongo.github.io';
+  const counterKey = 'visit-counter';
+
+  // Fonction pour récupérer et afficher le compteur
+  function updateVisitCounter() {
+    const counterSpan = document.getElementById('count');
+    fetch(`https://api.countapi.xyz/hit/${counterNamespace}/${counterKey}`)
+      .then(response => response.json())
+      .then(data => {
+        counterSpan.textContent = data.value; // Met à jour le compteur
+      })
+      .catch(error => {
+        console.error('Erreur avec le compteur:', error);
+        counterSpan.textContent = 'Erreur'; // Message en cas de problème
+      });
+  }
+
+  // Appelle la fonction au chargement de la page
+  updateVisitCounter();
+</script>
+
           <div class="col-12">
             <p class="text-center mb-0 mt-4">Copyright &copy;2020. Tout droit reservé | Ce template est réalisé avec <span class="ti-heart fg-theme-red"></span> par <a href="https://www.macodeid.com/">MACode ID</a></p>
           </div>
